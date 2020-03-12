@@ -11,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Dashboard</title>
+  <title>Sports - 무재칠시</title>
 
   <!-- Custom fonts for this template-->
   <link href="res/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -28,14 +28,14 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
+    <a class="navbar-brand mr-1" href="/baseball">Sports - 무재칠시</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
     </button>
 
     <!-- Navbar Search -->
-    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+<!--     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
         <div class="input-group-append">
@@ -46,7 +46,7 @@
       </div>
     </form>
 
-    <!-- Navbar -->
+    Navbar
     <ul class="navbar-nav ml-auto ml-md-0">
       <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,7 +83,7 @@
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
         </div>
       </li>
-    </ul>
+    </ul> -->
 
   </nav>
 
@@ -91,28 +91,31 @@
 
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Login</span>
         </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <h6 class="dropdown-header">Login Screens:</h6>
+          <a class="dropdown-item" href="/baseball/mybatis/login.do">Login</a>
+          <a class="dropdown-item" href="register.html">회원가입</a>
+          <div class="dropdown-divider"></div>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Board</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="login.do">Login</a>
-          <a class="dropdown-item" href="register.html">Register</a>
+      	  <h6 class="dropdown-header">Board:</h6>
+          <a class="dropdown-item" href="">승률예측</a>
+          <a class="dropdown-item" href="">경기일정</a>
           <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.html">404 Page</a>
-          <a class="dropdown-item" href="blank.html">Blank Page</a>
         </div>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Charts</span></a>
@@ -121,19 +124,16 @@
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
-      </li>
+      </li> -->
     </ul>
 
-    <div id="content-wrapper">
+    <div id="content-wrapper">     
 
       <div class="container-fluid">
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">Overview</li>
+          <li class="breadcrumb-item active">NBA, MLB, KBO</li>
         </ol>
 
         <!-- Icon Cards-->
@@ -144,7 +144,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">26 New Messages!</div>
+                <div class="mr-5">승률 예측</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
@@ -160,7 +160,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5">11 New Tasks!</div>
+                <div class="mr-5">경기 일정</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
@@ -170,7 +170,7 @@
               </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+<!--           <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -185,8 +185,8 @@
                 </span>
               </a>
             </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          </div> -->
+          <!-- <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-danger o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -201,11 +201,11 @@
                 </span>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Area Chart Example-->
-        <div class="card mb-3">
+<!--         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
             Area Chart Example</div>
@@ -214,9 +214,9 @@
           </div>
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
-
+ -->
         <!-- DataTables Example -->
-        <div class="card mb-3">
+<!--         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
             Data Table Example</div>
@@ -707,14 +707,14 @@
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
 
-      </div>
+      </div> -->
       <!-- /.container-fluid -->
 
       <!-- Sticky Footer -->
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
+            <span>무재칠시 2020</span>
           </div>
         </div>
       </footer>
