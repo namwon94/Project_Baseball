@@ -26,7 +26,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="/baseball">Sports - 무재칠시</a>
+    <a class="navbar-brand mr-1" href="${pageContext.request.contextPath }">Sports - 무재칠시</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -39,13 +39,13 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/baseball" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="${pageContext.request.contextPath }" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
           <span>Board</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       	  <h6 class="dropdown-header">Board:</h6>
-          <a class="dropdown-item" href="${pageContext.request.contextPath }/baseball/nBoard.do">NBA승률예측</a>
+          <a class="dropdown-item" href="${pageContext.request.contextPath }/nBoard.do">NBA승률예측</a>
           <a class="dropdown-item" href="">KBO승률예측</a>
           <a class="dropdown-item" href="">MLB승률예측</a>
           <a class="dropdown-item" href="">경기일정</a>
@@ -63,11 +63,11 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item active">NBA Board</li>
         </ol>
-        <form action="" method="get">
+        <form action="${pageContext.request.contextPath }/nBoard_get.do"" method="get">
         <fieldset>
         <div>
         	Home Team : 
-        	<select name="team">
+        	<select name="home_Team">
         		<option value="HOU">HOU</option>
         		<option value="POR">POR</option>
         		<option value="CHA">CHA</option>
@@ -101,16 +101,16 @@
         	</select>
         </div>
         <div style="margin-top:10px;"> 
-        	home_WS : <input type="text" />
-        	home_VORP : <input type="text" />
-        	home_BPM : <input type="text" />
+        	home_WS : <input type="text" name="home_WS" />
+        	home_VORP : <input type="text" name="home_VORP" />
+        	home_BPM : <input type="text" name="home_BPM" />
         </div>
         </fieldset>
         <br />
         
         <div>
         	Away Team : 
-        	<select name="team">
+        	<select name="away_Team">
         		<option value="HOU">HOU</option>
         		<option value="POR">POR</option>
         		<option value="CHA">CHA</option>
@@ -144,12 +144,12 @@
         	</select>
         </div>
         <div style="margin-top:10px;"> 
-        	Away_WS : <input type="text" />
-        	Away_VORP : <input type="text" />
-        	Away_BPM : <input type="text" />
+        	away_WS : <input type="text" name="away_WS" />
+        	away_VORP : <input type="text" name="away_VORP" />
+        	away_BPM : <input type="text" name="away_BPM" />
         </div>
         <br />
-        <input type="submit" name="입력" />
+        <input type="submit" value="입력" />
         </form>
           
       <!-- Sticky Footer -->
