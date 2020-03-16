@@ -45,7 +45,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       	  <h6 class="dropdown-header">Board:</h6>
-          <a class="dropdown-item" href="/baseball/nBoard.do">NBA승률예측</a>
+          <a class="dropdown-item" href="${pageContext.request.contextPath }/baseball/nBoard.do">NBA승률예측</a>
           <a class="dropdown-item" href="">KBO승률예측</a>
           <a class="dropdown-item" href="">MLB승률예측</a>
           <a class="dropdown-item" href="">경기일정</a>
@@ -66,7 +66,7 @@
         <form action="" method="get">
         <fieldset>
         <div>
-        	팀 : 
+        	Home Team : 
         	<select name="team">
         		<option value="HOU">HOU</option>
         		<option value="POR">POR</option>
@@ -101,15 +101,15 @@
         	</select>
         </div>
         <div style="margin-top:10px;"> 
-        	WS : <input type="text" />
-        	VORP : <input type="text" />
-        	BPM : <input type="text" />
+        	home_WS : <input type="text" />
+        	home_VORP : <input type="text" />
+        	home_BPM : <input type="text" />
         </div>
         </fieldset>
         <br />
         
         <div>
-        	팀 : 
+        	Away Team : 
         	<select name="team">
         		<option value="HOU">HOU</option>
         		<option value="POR">POR</option>
@@ -144,9 +144,9 @@
         	</select>
         </div>
         <div style="margin-top:10px;"> 
-        	WS : <input type="text" />
-        	VORP : <input type="text" />
-        	BPM : <input type="text" />
+        	Away_WS : <input type="text" />
+        	Away_VORP : <input type="text" />
+        	Away_BPM : <input type="text" />
         </div>
         <br />
         <input type="submit" name="입력" />

@@ -110,7 +110,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       	  <h6 class="dropdown-header">Board:</h6>
-          <a class="dropdown-item" href="/baseball/nBoard.do">NBA승률예측</a>
+          <a class="dropdown-item" href="${pageContext.request.contextPath }/baseball/nBoard.do">NBA승률예측</a>
           <a class="dropdown-item" href="">KBO승률예측</a>
           <a class="dropdown-item" href="">MLB승률예측</a>
           <a class="dropdown-item" href="">경기일정</a>
