@@ -111,8 +111,8 @@
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       	  <h6 class="dropdown-header">Board:</h6>
           <a class="dropdown-item" href="${pageContext.request.contextPath }/nBoard.do">NBA승률예측</a>
-          <a class="dropdown-item" href="">KBO승률예측</a>
-          <a class="dropdown-item" href="">MLB승률예측</a>
+          <a class="dropdown-item" href="${pageContext.request.contextPath }/kBoard.do">KBO승률예측</a>
+          <a class="dropdown-item" href="${pageContext.request.contextPath }/mBoard.do">MLB승률예측</a>
           <a class="dropdown-item" href="">경기일정</a>
           <div class="dropdown-divider"></div>
         </div>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="mr-5">NBA승률 예측</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" href="${pageContext.request.contextPath }/nBoard.do"">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="mr-5">KBO승률 예측</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" href="${pageContext.request.contextPath }/kBoard.do">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="mr-5">MLB승률 예측</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" href="${pageContext.request.contextPath }/mBoard.do">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>

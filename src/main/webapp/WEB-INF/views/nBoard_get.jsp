@@ -11,7 +11,7 @@
 	<h3>GET방식으로 전송된 검색 파라미터</h3>
 	
 	<ul>
-		<li>홈팀 : ${home_Team }</li>
+		<li>home_Team : ${home_Team }</li>
 		<li>home_WS : ${home_WS }</li>
 		<li>home_VORP : ${home_VORP }</li>
 		<li>home_BPM : ${home_BPM }</li>

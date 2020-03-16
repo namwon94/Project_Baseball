@@ -64,7 +64,6 @@
           <li class="breadcrumb-item active">NBA Board</li>
         </ol>
         <form action="${pageContext.request.contextPath }/nBoard_get.do"" method="get">
-        <fieldset>
         <div>
         	Home Team : 
         	<select name="home_Team">
@@ -100,17 +99,18 @@
         		<option value="NYK">NYK</option>
         	</select>
         </div>
-        <div style="margin-top:10px;"> 
+        <div style="margin-top:20px;"> 
         	home_WS : <input type="text" name="home_WS" />
+        	<br /><br />
         	home_VORP : <input type="text" name="home_VORP" />
+        	<br /><br />
         	home_BPM : <input type="text" name="home_BPM" />
         </div>
-        </fieldset>
-        <br />
+        <br /><br /><br /><br /><br /><br /><br />
         
         <div>
         	Away Team : 
-        	<select name="away_Team">
+        	<select name="away_Team">  
         		<option value="HOU">HOU</option>
         		<option value="POR">POR</option>
         		<option value="CHA">CHA</option>
@@ -143,9 +143,11 @@
         		<option value="NYK">NYK</option>
         	</select>
         </div>
-        <div style="margin-top:10px;"> 
+        <div style="margin-top:20px;"> 
         	away_WS : <input type="text" name="away_WS" />
+        	<br /><br />
         	away_VORP : <input type="text" name="away_VORP" />
+        	<br /><br />
         	away_BPM : <input type="text" name="away_BPM" />
         </div>
         <br />
