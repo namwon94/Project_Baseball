@@ -110,7 +110,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       	  <h6 class="dropdown-header">Board:</h6>
-          <a class="dropdown-item" href="">승률예측</a>
+          <a class="dropdown-item" href="/baseball/nBoard.do">NBA승률예측</a>
+          <a class="dropdown-item" href="">KBO승률예측</a>
+          <a class="dropdown-item" href="">MLB승률예측</a>
           <a class="dropdown-item" href="">경기일정</a>
           <div class="dropdown-divider"></div>
         </div>
@@ -144,7 +146,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">승률 예측</div>
+                <div class="mr-5">NBA승률 예측</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
@@ -160,7 +162,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5">경기 일정</div>
+                <div class="mr-5">KBO승률 예측</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
@@ -170,13 +172,13 @@
               </a>
             </div>
           </div>
-<!--           <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
                 </div>
-                <div class="mr-5">123 New Orders!</div>
+                <div class="mr-5">MLB승률 예측</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
@@ -185,14 +187,14 @@
                 </span>
               </a>
             </div>
-          </div> -->
-          <!-- <div class="col-xl-3 col-sm-6 mb-3">
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-danger o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-life-ring"></i>
                 </div>
-                <div class="mr-5">13 New Tickets!</div>
+                <div class="mr-5">경기일정</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
@@ -201,7 +203,7 @@
                 </span>
               </a>
             </div>
-          </div> -->
+          </div>
         </div>
 
         <!-- Area Chart Example-->

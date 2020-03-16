@@ -22,4 +22,20 @@ public class HomeController {
 		return "index";
 	}
 	
+	@RequestMapping("/nBoard")
+	public String helloSpring(Model model) {
+		return "nBoard";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
