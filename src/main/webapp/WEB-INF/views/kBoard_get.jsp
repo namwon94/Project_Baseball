@@ -11,7 +11,7 @@
 	<h3>GET방식으로 전송된 검색 파라미터</h3>
 	
 	<ul>
-		<li>home_Team : ${home_Team }</li>
+
 		<li>hBatter1 : ${hBatter1 }</li>
 		<li>hBatter2 : ${hBatter2 }</li>
 		<li>hBatter3 : ${hBatter3 }</li>
@@ -24,7 +24,7 @@
 		<li>hPitcher : ${hPitcher }</li>
 		
 		
-		<li>away_Team : ${away_Team }</li>
+
 		<li>aBatter1 : ${aBatter1 }</li>
 		<li>aBatter2 : ${aBatter2 }</li>
 		<li>aBatter3 : ${aBatter3 }</li>

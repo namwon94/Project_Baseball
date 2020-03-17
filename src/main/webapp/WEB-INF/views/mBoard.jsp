@@ -102,25 +102,18 @@
         	</select>
         </div>
         <div style="margin-top:20px;"> 
-        	1번타자 : <input type="text" name="hWar1" />&nbsp;&nbsp; <input type="text" name="hSLG1" />&nbsp;&nbsp; <input type="text" name="hOBP1" />
+        	home_OBP : <input type="text" name="home_OBP" />
         	<br /><br />
-        	2번타자 : <input type="text" name="hWar2" />&nbsp;&nbsp; <input type="text" name="hSLG2" />&nbsp;&nbsp; <input type="text" name="hOBP2" />
+        	home_SLG : <input type="text" name="home_SLG" />
         	<br /><br />
-        	3번타자 : <input type="text" name="hWar3" />&nbsp;&nbsp; <input type="text" name="hSLG3" />&nbsp;&nbsp; <input type="text" name="hOBP3" />
+        	home_WAR_b : <input type="text" name="home_WAR_b" />
         	<br /><br />
-        	4번타자 : <input type="text" name="hWar4" />&nbsp;&nbsp; <input type="text" name="hSLG4" />&nbsp;&nbsp; <input type="text" name="hOBP4" />
+        	home_ERA : <input type="text" name="home_ERA" />
         	<br /><br />
-        	5번타자 : <input type="text" name="hWar5" />&nbsp;&nbsp; <input type="text" name="hSLG5" />&nbsp;&nbsp; <input type="text" name="hOBP5" />
+        	home_WHIP : <input type="text" name="home_WHIP" />
         	<br /><br />
-        	6번타자 : <input type="text" name="hWar6" />&nbsp;&nbsp; <input type="text" name="hSLG6" />&nbsp;&nbsp; <input type="text" name="hOBP6" />
+        	home_WAR_p : <input type="text" name="home_WAR_p" />
         	<br /><br />
-        	7번타자 : <input type="text" name="hWar7" />&nbsp;&nbsp; <input type="text" name="hSLG7" />&nbsp;&nbsp; <input type="text" name="hOBP7" />
-        	<br /><br />
-        	8번타자 : <input type="text" name="hWar8" />&nbsp;&nbsp; <input type="text" name="hSLG8" />&nbsp;&nbsp; <input type="text" name="hOBP8" />
-        	<br /><br />
-        	9번타자 : <input type="text" name="hWar9" />&nbsp;&nbsp; <input type="text" name="hSLG9" />&nbsp;&nbsp; <input type="text" name="hOBP9" />
-        	<br /><br />
-        	투수 : <input type="text" name="hWar10" />&nbsp;&nbsp; <input type="text" name="hERA1" />&nbsp;&nbsp; <input type="text" name="hWHIP1" />
         </div>
         <br /><br /><br /><br /><br /><br /><br />
         
@@ -160,25 +153,17 @@
         	</select>
         </div>
         <div style="margin-top:20px;"> 
-        	1번타자 : <input type="text" name="aWar1" />&nbsp;&nbsp; <input type="text" name="aSLG1" />&nbsp;&nbsp; <input type="text" name="aOBP1" />
+        	away_OBP : <input type="text" name="away_OBP" />
         	<br /><br />
-        	2번타자 : <input type="text" name="aWar2" />&nbsp;&nbsp; <input type="text" name="aSLG2" />&nbsp;&nbsp; <input type="text" name="aOBP2" />
+        	away_SLG : <input type="text" name="away_SLG" />
         	<br /><br />
-        	3번타자 : <input type="text" name="aWar3" />&nbsp;&nbsp; <input type="text" name="aSLG3" />&nbsp;&nbsp; <input type="text" name="aOBP3" />
+        	away_WAR_b : <input type="text" name="away_WAR_b" />
         	<br /><br />
-        	4번타자 : <input type="text" name="aWar4" />&nbsp;&nbsp; <input type="text" name="aSLG4" />&nbsp;&nbsp; <input type="text" name="aOBP4" />
+        	away_ERA : <input type="text" name="away_ERA" />
         	<br /><br />
-        	5번타자 : <input type="text" name="aWar5" />&nbsp;&nbsp; <input type="text" name="aSLG5" />&nbsp;&nbsp; <input type="text" name="aOBP5" />
+        	away_WHIP : <input type="text" name="away_WHIP" />
         	<br /><br />
-        	6번타자 : <input type="text" name="aWar6" />&nbsp;&nbsp; <input type="text" name="aSLG6" />&nbsp;&nbsp; <input type="text" name="aOBP6" />
-        	<br /><br />
-        	7번타자 : <input type="text" name="aWar7" />&nbsp;&nbsp; <input type="text" name="aSLG7" />&nbsp;&nbsp; <input type="text" name="aOBP7" />
-        	<br /><br />
-        	8번타자 : <input type="text" name="aWar8" />&nbsp;&nbsp; <input type="text" name="aSLG8" />&nbsp;&nbsp; <input type="text" name="aOBP8" />
-        	<br /><br />
-        	9번타자 : <input type="text" name="aWar9" />&nbsp;&nbsp; <input type="text" name="aSLG9" />&nbsp;&nbsp; <input type="text" name="aOBP9" />
-        	<br /><br />
-        	투수 : <input type="text" name="aWar10" />&nbsp;&nbsp; <input type="text" name="aERA1" />&nbsp;&nbsp; <input type="text" name="aWHIP1" />
+        	away_WAR_p : <input type="text" name="away_WAR_p" />
         </div>
         <br />
         <input type="submit" value="입력" />

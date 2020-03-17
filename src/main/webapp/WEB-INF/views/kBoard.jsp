@@ -80,25 +80,25 @@
         	</select>
         </div>
         <div style="margin-top:20px;"> 
-        	1번타자 : <input type="text" name="hWar1" />
+        	1번타자 : <input type="text" name="home_hitter1" />
         	<br /><br />
-        	2번타자 : <input type="text" name="hWar2" />
+        	2번타자 : <input type="text" name="home_hitter2" />
         	<br /><br />
-        	3번타자 : <input type="text" name="hWar3" />
+        	3번타자 : <input type="text" name="home_hitter3" />
         	<br /><br />
-        	4번타자 : <input type="text" name="hWar4" />
+        	4번타자 : <input type="text" name="home_hitter4" />
         	<br /><br />
-        	5번타자 : <input type="text" name="hWar5" />
+        	5번타자 : <input type="text" name="home_hitter5" />
         	<br /><br />
-        	6번타자 : <input type="text" name="hWar6" />
+        	6번타자 : <input type="text" name="home_hitter6" />
         	<br /><br />
-        	7번타자 : <input type="text" name="hWar7" />
+        	7번타자 : <input type="text" name="home_hitter7" />
         	<br /><br />
-        	8번타자 : <input type="text" name="hWar8" />
+        	8번타자 : <input type="text" name="home_hitter8" />
         	<br /><br />
-        	9번타자 : <input type="text" name="hWar9" />
+        	9번타자 : <input type="text" name="home_hitter9" />
         	<br /><br />
-        	투수 : <input type="text" name="hWar10" />
+        	투수 : <input type="text" name="home_pitcher" />
         </div>
         <br /><br />
         
@@ -118,25 +118,25 @@
         	</select>
         </div>
         <div style="margin-top:20px;"> 
-        	1번타자 : <input type="text" name="aWar1" />
+        	1번타자 : <input type="text" name="away_hitter1" />
         	<br /><br />
-        	2번타자 : <input type="text" name="aWar2" />
+        	2번타자 : <input type="text" name="away_hitter2" />
         	<br /><br />
-        	3번타자 : <input type="text" name="aWar3" />
+        	3번타자 : <input type="text" name="away_hitter3" />
         	<br /><br />
-        	4번타자 : <input type="text" name="aWar4" />
+        	4번타자 : <input type="text" name="away_hitter4" />
         	<br /><br />
-        	5번타자 : <input type="text" name="aWar5" />
+        	5번타자 : <input type="text" name="away_hitter5" />
         	<br /><br />
-        	6번타자 : <input type="text" name="aWar6" />
+        	6번타자 : <input type="text" name="away_hitter6" />
         	<br /><br />
-        	7번타자 : <input type="text" name="aWar7" />
+        	7번타자 : <input type="text" name="away_hitter7" />
         	<br /><br />
-        	8번타자 : <input type="text" name="aWar8" />
+        	8번타자 : <input type="text" name="away_hitter8" />
         	<br /><br />
-        	9번타자 : <input type="text" name="aWar9" />
+        	9번타자 : <input type="text" name="away_hitter9" />
         	<br /><br />
-        	투수 : <input type="text" name="aWar10" />
+        	투수 : <input type="text" name="away_hitter" />
         </div>
         <br />
         <input type="submit" value="입력" />
