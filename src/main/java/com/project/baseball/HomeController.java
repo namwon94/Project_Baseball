@@ -97,7 +97,7 @@ public class HomeController {
 		return "kBoard";
 	}
 
-	@RequestMapping(value="/kBoard_get", method=RequestMethod.GET)
+	@RequestMapping(value="/kBoard_get.do", method=RequestMethod.GET)
 	@ResponseBody
 	public String kBoard(HttpServletRequest req, Model model) {
 		System.out.println("RequestMethod.GET방식으로 폼값전송");
@@ -175,7 +175,8 @@ public class HomeController {
 					+ "&away_hitter6="+aBatter6
 					+ "&away_hitter7="+aBatter7
 					+ "&away_hitter8="+aBatter8
-					+ "&away_hitter9="+aBatter9;
+					+ "&away_hitter9="+aBatter9
+					+"&";
 			URL url = new URL(urlstr);
 			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
 			urlconnnection.setRequestMethod("GET");
