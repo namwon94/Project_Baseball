@@ -61,7 +61,9 @@
      
      	<!-- Breadcrumbs-->
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active">NBA Board</li>
+          <li class="breadcrumb-item active">MLB Board </li>
+          <li class="breadcrumb-item active">타자 : WAR, SLG, OBP 입력</li>
+          <li class="breadcrumb-item active">투수 : WAR, ERA, WHIP 입력 </li>
         </ol>
         <form action="${pageContext.request.contextPath }/mBoard_get.do"" method="get">
         <div>
@@ -118,7 +120,7 @@
         	<br /><br />
         	9번타자 : <input type="text" name="hWar9" />&nbsp;&nbsp; <input type="text" name="hSLG9" />&nbsp;&nbsp; <input type="text" name="hOBP9" />
         	<br /><br />
-        	투수 : <input type="text" name="hWar10" />&nbsp;&nbsp; <input type="text" name="hERA1" />&nbsp;&nbsp; <input type="text" name="WHIP1" />
+        	투수 : <input type="text" name="hWar10" />&nbsp;&nbsp; <input type="text" name="hERA1" />&nbsp;&nbsp; <input type="text" name="hWHIP1" />
         </div>
         <br /><br /><br /><br /><br /><br /><br />
         
@@ -176,7 +178,7 @@
         	<br /><br />
         	9번타자 : <input type="text" name="aWar9" />&nbsp;&nbsp; <input type="text" name="aSLG9" />&nbsp;&nbsp; <input type="text" name="aOBP9" />
         	<br /><br />
-        	투수 : <input type="text" name="aWar10" />&nbsp;&nbsp; <input type="text" name="hERA2" />&nbsp;&nbsp; <input type="text" name="WHIP2" />
+        	투수 : <input type="text" name="aWar10" />&nbsp;&nbsp; <input type="text" name="aERA1" />&nbsp;&nbsp; <input type="text" name="aWHIP1" />
         </div>
         <br />
         <input type="submit" value="입력" />

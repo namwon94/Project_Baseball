@@ -61,7 +61,7 @@
      
      	<!-- Breadcrumbs-->
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active">NBA Board</li>
+          <li class="breadcrumb-item active">KBO Board - WAR를 입력해주세요</li>
         </ol>
         <form action="${pageContext.request.contextPath }/kBoard_get.do"" method="get">
         <div>

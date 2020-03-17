@@ -135,7 +135,7 @@
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active">NBA, MLB, KBO</li>
+          <li class="breadcrumb-item active">NBA, MLB, KBO 승률예측</li>
         </ol>
 
         <!-- Icon Cards-->
