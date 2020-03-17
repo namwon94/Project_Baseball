@@ -42,13 +42,13 @@ public class HomeController {
 	public String nBoard(HttpServletRequest req, Model model) {
 		System.out.println("RequestMethod.GET방식으로 폼값전송");
 
-		String home_WS  = req.getParameter("home_WS");
-		String home_VORP = req.getParameter("home_VORP");
-		String home_BPM = req.getParameter("home_BPM");
+		float home_WS  = Float.parseFloat(req.getParameter("home_WS"));
+		float home_VORP = Float.parseFloat(req.getParameter("home_VORP"));
+		float home_BPM = Float.parseFloat(req.getParameter("home_BPM"));
 		
-		String away_WS = req.getParameter("away_WS");
-		String away_VORP = req.getParameter("away_VORP");
-		String away_BPM = req.getParameter("away_BPM");
+		float away_WS = Float.parseFloat(req.getParameter("away_WS"));
+		float away_VORP = Float.parseFloat(req.getParameter("away_VORP"));
+		float away_BPM = Float.parseFloat(req.getParameter("away_BPM"));
 		
 		model.addAttribute("home_WS", home_WS);
 		model.addAttribute("home_VORP", home_VORP);
@@ -60,13 +60,10 @@ public class HomeController {
 		
 		StringBuffer result =  new StringBuffer();
 		try {
-			String urlstr = "https://sports-predict-api-ppkcy.run.goorm.io//"
-					+ "NBA?home_BPM="+home_BPM
-					+ "&away_BPM="+away_BPM
-					+ "&home_VORP="+home_VORP
-					+ "&away_VORP="+away_VORP
-					+ "&home_WS="+home_WS
-					+ "&away_WS="+away_WS;
+			String urlstr = "https://sports-predict-api-ppkcy.run.goorm.io//" + "NBA?home_BPM="+home_BPM
+					 + "&away_BPM="+away_BPM + "&home_VORP="+home_VORP + "&away_VORP="+away_VORP 
+					 +"&home_WS="+home_WS
+					 + "&away_WS="+away_WS;
 			URL url = new URL(urlstr);
 			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
 			urlconnnection.setRequestMethod("GET");
