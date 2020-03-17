@@ -17,6 +17,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
@@ -39,6 +40,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value="/nBoard_get", method=RequestMethod.GET)
+	@ResponseBody
 	public String nBoard(HttpServletRequest req, Model model) {
 		System.out.println("RequestMethod.GET방식으로 폼값전송");
 
@@ -70,12 +72,14 @@ public class HomeController {
 			URL url = new URL(urlstr);
 			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
 			urlconnnection.setRequestMethod("GET");
+			urlconnnection.setRequestProperty("Content-Type", "application.json; UTF-8");
+			urlconnnection.setRequestProperty("Accept", "application/json");
 			
 			BufferedReader br = new BufferedReader(new InputStreamReader(urlconnnection.getInputStream(),"UTF-8"));
 			
 			String returnLine;
 			
-			while((returnLine=br.readLine())!=null) {
+			while((returnLine=br.readLine()) != null) {
 				result.append(returnLine);
 				System.out.println(br.readLine());
 			}
