@@ -21,8 +21,7 @@
 		<li>away_VORP : ${away_VORP }</li>
 		<li>away_BPM : ${away_BPM }</li>
 		
-</script>
-
+		<li>result : ${result }</li>
 		
 	</ul>
 </body>

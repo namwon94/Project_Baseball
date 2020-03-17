@@ -89,7 +89,7 @@ public class HomeController {
 			e.printStackTrace();
 		}
 		
-		return "nBoard_get";
+		return result.toString();
 	}
 	
 	@RequestMapping("/kBoard")
