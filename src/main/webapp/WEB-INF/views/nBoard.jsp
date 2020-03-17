@@ -192,7 +192,7 @@ $( document ).ready(function() {
         }// 요청 실패.
     });
 });
-  
+</script> 
   
   
   

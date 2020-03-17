@@ -98,33 +98,34 @@ public class HomeController {
 	}
 
 	@RequestMapping(value="/kBoard_get", method=RequestMethod.GET)
+	@ResponseBody
 	public String kBoard(HttpServletRequest req, Model model) {
 		System.out.println("RequestMethod.GET방식으로 폼값전송");
 
 		
-		String hBatter1 = req.getParameter("home_hitter1");
-		String hBatter2 = req.getParameter("home_hitter2");
-		String hBatter3 = req.getParameter("home_hitter3");
-		String hBatter4 = req.getParameter("home_hitter4");
-		String hBatter5 = req.getParameter("home_hitter5");
-		String hBatter6 = req.getParameter("home_hitter6");
-		String hBatter7 = req.getParameter("home_hitter7");
-		String hBatter8 = req.getParameter("home_hitter8");
-		String hBatter9 = req.getParameter("home_hitter9");
-		String hPitcher = req.getParameter("home_pitcher");
+		float hBatter1 = Float.parseFloat(req.getParameter("home_hitter1"));
+		float hBatter2 = Float.parseFloat(req.getParameter("home_hitter2"));
+		float hBatter3 = Float.parseFloat(req.getParameter("home_hitter3"));
+		float hBatter4 = Float.parseFloat(req.getParameter("home_hitter4"));
+		float hBatter5 = Float.parseFloat(req.getParameter("home_hitter5"));
+		float hBatter6 = Float.parseFloat(req.getParameter("home_hitter6"));
+		float hBatter7 = Float.parseFloat(req.getParameter("home_hitter7"));
+		float hBatter8 = Float.parseFloat(req.getParameter("home_hitter8"));
+		float hBatter9 = Float.parseFloat(req.getParameter("home_hitter9"));
+		float hPitcher = Float.parseFloat(req.getParameter("home_pitcher"));
 		
 		
 
-		String aBatter1 = req.getParameter("away_hitter1");
-		String aBatter2 = req.getParameter("away_hitter2");
-		String aBatter3 = req.getParameter("away_hitter3");
-		String aBatter4 = req.getParameter("away_hitter4");
-		String aBatter5 = req.getParameter("away_hitter5");
-		String aBatter6 = req.getParameter("away_hitter6");
-		String aBatter7 = req.getParameter("away_hitter7");
-		String aBatter8 = req.getParameter("away_hitter8");
-		String aBatter9 = req.getParameter("away_hitter9");
-		String aPitcher = req.getParameter("away_pitcher");
+		float aBatter1 = Float.parseFloat(req.getParameter("away_hitter1"));
+		float aBatter2 = Float.parseFloat(req.getParameter("away_hitter2"));
+		float aBatter3 = Float.parseFloat(req.getParameter("away_hitter3"));
+		float aBatter4 = Float.parseFloat(req.getParameter("away_hitter4"));
+		float aBatter5 = Float.parseFloat(req.getParameter("away_hitter5"));
+		float aBatter6 = Float.parseFloat(req.getParameter("away_hitter6"));
+		float aBatter7 = Float.parseFloat(req.getParameter("away_hitter7"));
+		float aBatter8 = Float.parseFloat(req.getParameter("away_hitter8"));
+		float aBatter9 = Float.parseFloat(req.getParameter("away_hitter9"));
+		float aPitcher = Float.parseFloat(req.getParameter("away_pitcher"));
 		
 
 		model.addAttribute("hBatter1", hBatter1);
@@ -151,7 +152,51 @@ public class HomeController {
 		model.addAttribute("aPitcher", aPitcher);
 		
 		
-		return "kBoard_get";
+		StringBuffer result =  new StringBuffer();
+		try {
+			String urlstr = 
+					"https://sports-predict-api-ppkcy.run.goorm.io/KBO?"
+					+ "home_pitcher="+hPitcher
+					+ "&home_hitter1="+hBatter1
+					+ "&home_hitter2="+hBatter2
+					+ "&home_hitter3="+hBatter3
+					+ "&home_hitter4="+hBatter4
+					+ "&home_hitter5="+hBatter5
+					+ "&home_hitter6="+hBatter6
+					+ "&home_hitter7="+hBatter7
+					+ "&home_hitter8="+hBatter8
+					+ "&home_hitter9="+hBatter9
+					+ "&away_pitcher="+aPitcher
+					+ "&away_hitter1="+aBatter1
+					+ "&away_hitter2="+aBatter2
+					+ "&away_hitter3="+aBatter3
+					+ "&away_hitter4="+aBatter4
+					+ "&away_hitter5="+aBatter5
+					+ "&away_hitter6="+aBatter6
+					+ "&away_hitter7="+aBatter7
+					+ "&away_hitter8="+aBatter8
+					+ "&away_hitter9="+aBatter9;
+			URL url = new URL(urlstr);
+			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
+			urlconnnection.setRequestMethod("GET");
+			urlconnnection.setRequestProperty("Content-Type", "application.json; UTF-8");
+			urlconnnection.setRequestProperty("Accept", "application/json");
+			
+			BufferedReader br = new BufferedReader(new InputStreamReader(urlconnnection.getInputStream(),"UTF-8"));
+			
+			String returnLine;
+			
+			while((returnLine=br.readLine()) != null) {
+				result.append(returnLine);
+				System.out.println(br.readLine());
+			}
+			urlconnnection.disconnect();		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return result.toString();
 
 	}
 	
@@ -163,24 +208,25 @@ public class HomeController {
 	
 	
 	@RequestMapping(value="/mBoard_get", method=RequestMethod.GET)
+	@ResponseBody
 	public String mBoard(HttpServletRequest req, Model model) {
 		System.out.println("RequestMethod.GET방식으로 폼값전송");
 		
-		String home_OBP = req.getParameter("home_OBP");
-		String home_SLG = req.getParameter("home_SLG");
-		String home_WAR_b = req.getParameter("home_WAR_b");
-		String home_ERA = req.getParameter("home_ERA");
-		String home_WHIP = req.getParameter("home_WHIP");
-		String home_WAR_p = req.getParameter("home_WAR_p");
+		float home_OBP = Float.parseFloat(req.getParameter("home_OBP"));
+		float home_SLG = Float.parseFloat(req.getParameter("home_SLG"));
+		float home_WAR_b = Float.parseFloat(req.getParameter("home_WAR_b"));
+		float home_ERA = Float.parseFloat(req.getParameter("home_ERA"));
+		float home_WHIP = Float.parseFloat(req.getParameter("home_WHIP"));
+		float home_WAR_p = Float.parseFloat(req.getParameter("home_WAR_p"));
 
 		
 		
-		String away_OBP = req.getParameter("away_OBP");
-		String away_SLG = req.getParameter("away_SLG");
-		String away_WAR_b = req.getParameter("away_WAR_b");
-		String away_ERA = req.getParameter("away_ERA");
-		String away_WHIP = req.getParameter("away_WHIP");
-		String away_WAR_p = req.getParameter("away_WAR_p");
+		float away_OBP = Float.parseFloat(req.getParameter("away_OBP"));
+		float away_SLG = Float.parseFloat(req.getParameter("away_SLG"));
+		float away_WAR_b = Float.parseFloat(req.getParameter("away_WAR_b"));
+		float away_ERA = Float.parseFloat(req.getParameter("away_ERA"));
+		float away_WHIP = Float.parseFloat(req.getParameter("away_WHIP"));
+		float away_WAR_p = Float.parseFloat(req.getParameter("away_WAR_p"));
 
 		
 		model.addAttribute("home_OBP", home_OBP);
@@ -199,7 +245,43 @@ public class HomeController {
 
 		
 		
-		return "mBoard_get";
+		StringBuffer result =  new StringBuffer();
+		try {
+			String urlstr = 
+					"https://sports-predict-api-ppkcy.run.goorm.io/MLB?"
+					+ "home_OBP="+home_OBP
+					+ "&home_SLG="+home_SLG
+					+ "&home_WAR_b="+home_WAR_b
+					+ "&away_OBP="+away_OBP
+					+ "&away_SLG="+away_SLG
+					+ "&away_WAR_b="+away_WAR_b
+					+ "&home_WHIP="+home_WHIP
+					+ "&home_ERA="+home_ERA
+					+ "&home_WAR_p="+home_WAR_p
+					+ "&away_WHIP="+away_WHIP
+					+ "&away_ERA="+away_ERA
+					+ "&away_WAR_p="+away_WAR_p;
+			URL url = new URL(urlstr);
+			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
+			urlconnnection.setRequestMethod("GET");
+			urlconnnection.setRequestProperty("Content-Type", "application.json; UTF-8");
+			urlconnnection.setRequestProperty("Accept", "application/json");
+			
+			BufferedReader br = new BufferedReader(new InputStreamReader(urlconnnection.getInputStream(),"UTF-8"));
+			
+			String returnLine;
+			
+			while((returnLine=br.readLine()) != null) {
+				result.append(returnLine);
+				System.out.println(br.readLine());
+			}
+			urlconnnection.disconnect();		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return result.toString();
 
 	}
 	
