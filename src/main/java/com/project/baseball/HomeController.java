@@ -60,8 +60,11 @@ public class HomeController {
 		
 		StringBuffer result =  new StringBuffer();
 		try {
-			String urlstr = "https://sports-predict-api-ppkcy.run.goorm.io//" + "NBA?home_BPM="+home_BPM
-					 + "&away_BPM="+away_BPM + "&home_VORP="+home_VORP + "&away_VORP="+away_VORP 
+			String urlstr = "https://sports-predict-api-ppkcy.run.goorm.io//" 
+					 + "NBA?home_BPM="+home_BPM
+					 + "&away_BPM="+away_BPM 
+					 + "&home_VORP="+home_VORP 
+					 + "&away_VORP="+away_VORP 
 					 +"&home_WS="+home_WS
 					 + "&away_WS="+away_WS;
 			URL url = new URL(urlstr);
