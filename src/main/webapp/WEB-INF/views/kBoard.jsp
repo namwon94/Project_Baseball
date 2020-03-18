@@ -136,7 +136,7 @@
         	<br /><br />
         	9번타자 : <input type="text" name="away_hitter9" />
         	<br /><br />
-        	투수 : <input type="text" name="away_hitter" />
+        	투수 : <input type="text" name="away_pitcher" />
         </div>
         <br />
         <input type="submit" value="입력" />
