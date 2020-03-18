@@ -59,13 +59,19 @@
 	         <div class="col-xl-3 col-sm-6 mb-3">
 	           <div class="card text-white bg-primary o-hidden h-100">
 	             <div class="card-body">
-	               <div class="card-body-icon">
+	               <div class="card-body-icon">   
 	                 <i class="fas fa-fw fa-comments"></i>
 	               </div>
 	               <div class="mr-5">${win_Team }팀 승리</div>
 	             </div>		
 				</div>
 			</div>
+		</div>
+		
+		<div>
+			<img src="./res/MLBlogo.jpg" alt="MLBlogo" width="300px", heigtht="300px" />
+			<br /><br /><br />
+			<img src="./res/MLBTEAM.jpg" alt="MLBTEAM" />
 		</div>
 
 	

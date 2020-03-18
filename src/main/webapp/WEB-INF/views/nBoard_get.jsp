@@ -70,10 +70,15 @@
 	               <div class="card-body-icon">
 	                 <i class="fas fa-fw fa-comments"></i>
 	               </div>
-	               <div class="mr-5">${win_Team }팀 승리</div>
+	               <div class="mr-5">${win_Team }팀 승리</div>   
 	             </div>		
 				</div>
 			</div>
+		</div>
+		<div style="margin-top:150px">
+			<img src="./res/NBAlogo.png" alt="NBAlogo" width="300px", height="300px" />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="./res/코비.jpg" alt="jpg" />
 		</div>
 
 	
