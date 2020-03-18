@@ -1,7 +1,6 @@
 # Project_Baseball
 
 https://github.com/Woosub-Kim/sports_predict_api
-
 프로 스포츠(NBA, KBO, MLB)의 데이터 기반 승률예측 spring기반 웹페이지 구현(승률예측은 위의 주소로 들어가서 api를 써야함) 
 <br/>
 밑의 데이터를 이용함
