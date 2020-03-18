@@ -13,8 +13,7 @@ KBO - WAR
 MLB - ERA, WHIP, WAR, SLG, OBP
 <br/>
 spring이용(Ecilpse 사용) -> @Controller, @ModelAndView, @RequestMapping 사용(웹페이지 구현) -> get방식으로 데이터를 보낸 후 ->
-<br/>
-JSON Type으로 home팀이 이기는지 away팀이 이기는지 받아온다 -> String으로 형변환후웹페이지
+JSON Type받고 -> String으로 형변환후웹페이지 
 
 <br/>
 <img width="" height="" src='https://github.com/namwon94/Project_Baseball/blob/master/webpage.png'></img>
