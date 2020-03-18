@@ -1,11 +1,5 @@
 # Project_Baseball
 
-https://github.com/Woosub-Kim/Project_KBO_Predict
-
-https://github.com/Woosub-Kim/project_NBA_predict
-
-
-https://github.com/Woosub-Kim/project_MLB_predict
-
-
 https://github.com/Woosub-Kim/sports_predict_api
+
+<img width="" height="" src='https://github.com/namwon94/Project_Baseball/blob/master/webpage.png'></img>
