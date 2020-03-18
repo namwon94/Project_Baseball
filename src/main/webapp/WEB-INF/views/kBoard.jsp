@@ -64,82 +64,84 @@
           <li class="breadcrumb-item active">KBO Board - WAR를 입력해주세요</li>
         </ol>
         <form action="${pageContext.request.contextPath }/kBoard_get.do"" method="get">
-        <div>
-        	Home Team : 
-        	<select name="home_Team">
-        		<option value="SK">SK</option>
-        		<option value="두산">두산</option>
-        		<option value="키움">키움</option>
-        		<option value="LG">LG</option>
-        		<option value="NC">NC</option>
-        		<option value="KT">KT</option>
-        		<option value="기아">기아</option>
-        		<option value="삼성">삼성</option>
-        		<option value="한화">한화</option>
-        		<option value="롯데">롯데</option>
-        	</select>
-        </div>
-        <div style="margin-top:20px;"> 
-        	1번타자 : <input type="text" name="home_hitter1" />
-        	<br /><br />
-        	2번타자 : <input type="text" name="home_hitter2" />
-        	<br /><br />
-        	3번타자 : <input type="text" name="home_hitter3" />
-        	<br /><br />
-        	4번타자 : <input type="text" name="home_hitter4" />
-        	<br /><br />
-        	5번타자 : <input type="text" name="home_hitter5" />
-        	<br /><br />
-        	6번타자 : <input type="text" name="home_hitter6" />
-        	<br /><br />
-        	7번타자 : <input type="text" name="home_hitter7" />
-        	<br /><br />
-        	8번타자 : <input type="text" name="home_hitter8" />
-        	<br /><br />
-        	9번타자 : <input type="text" name="home_hitter9" />
-        	<br /><br />
-        	투수 : <input type="text" name="home_pitcher" />
-        </div>
-        <br /><br />
-        
-        <div>
-        	Away Team : 
-        	<select name="away_Team">  
-        		<option value="SK">SK</option>
-        		<option value="두산">두산</option>
-        		<option value="키움">키움</option>
-        		<option value="LG">LG</option>
-        		<option value="NC">NC</option>
-        		<option value="KT">KT</option>
-        		<option value="기아">기아</option>
-        		<option value="삼성">삼성</option>
-        		<option value="한화">한화</option>
-        		<option value="롯데">롯데</option>
-        	</select>
-        </div>
-        <div style="margin-top:20px;"> 
-        	1번타자 : <input type="text" name="away_hitter1" />
-        	<br /><br />
-        	2번타자 : <input type="text" name="away_hitter2" />
-        	<br /><br />
-        	3번타자 : <input type="text" name="away_hitter3" />
-        	<br /><br />
-        	4번타자 : <input type="text" name="away_hitter4" />
-        	<br /><br />
-        	5번타자 : <input type="text" name="away_hitter5" />
-        	<br /><br />
-        	6번타자 : <input type="text" name="away_hitter6" />
-        	<br /><br />
-        	7번타자 : <input type="text" name="away_hitter7" />
-        	<br /><br />
-        	8번타자 : <input type="text" name="away_hitter8" />
-        	<br /><br />
-        	9번타자 : <input type="text" name="away_hitter9" />
-        	<br /><br />
-        	투수 : <input type="text" name="away_pitcher" />
-        </div>
-        <br />
-        <input type="submit" value="입력" />
+        <div class="row">
+	        <div class="col-xl-3 col-sm-6 mb-3">
+	        	Home Team : 
+	        	<select name="home_Team">
+	        		<option value="SK">SK</option>
+	        		<option value="두산">두산</option>
+	        		<option value="키움">키움</option>
+	        		<option value="LG">LG</option>
+	        		<option value="NC">NC</option>
+	        		<option value="KT">KT</option>
+	        		<option value="기아">기아</option>
+	        		<option value="삼성">삼성</option>
+	        		<option value="한화">한화</option>
+	        		<option value="롯데">롯데</option>
+	        	</select>
+	        </div>
+			<div class="col-xl-3 col-sm-6 mb-3">
+	        	1번타자 : <input type="text" name="home_hitter1" />
+	        	<br /><br />
+	        	2번타자 : <input type="text" name="home_hitter2" />
+	        	<br /><br />
+	        	3번타자 : <input type="text" name="home_hitter3" />
+	        	<br /><br />
+	        	4번타자 : <input type="text" name="home_hitter4" />
+	        	<br /><br />
+	        	5번타자 : <input type="text" name="home_hitter5" />
+	        	<br /><br />
+	        	6번타자 : <input type="text" name="home_hitter6" />
+	        	<br /><br />
+	        	7번타자 : <input type="text" name="home_hitter7" />
+	        	<br /><br />
+	        	8번타자 : <input type="text" name="home_hitter8" />
+	        	<br /><br />
+	        	9번타자 : <input type="text" name="home_hitter9" />
+	        	<br /><br />
+	        	투수 : <input type="text" name="home_pitcher" />
+	        </div>
+	        <br /><br />
+	        
+	        <div class="col-xl-3 col-sm-6 mb-3">
+	        	Away Team : 
+	        	<select name="away_Team">  
+	        		<option value="SK">SK</option>
+	        		<option value="두산">두산</option>
+	        		<option value="키움">키움</option>
+	        		<option value="LG">LG</option>
+	        		<option value="NC">NC</option>
+	        		<option value="KT">KT</option>
+	        		<option value="기아">기아</option>
+	        		<option value="삼성">삼성</option>
+	        		<option value="한화">한화</option>
+	        		<option value="롯데">롯데</option>
+	        	</select>
+	        </div>
+			<div class="col-xl-3 col-sm-6 mb-3">
+	        	1번타자 : <input type="text" name="away_hitter1" />
+	        	<br /><br />
+	        	2번타자 : <input type="text" name="away_hitter2" />
+	        	<br /><br />
+	        	3번타자 : <input type="text" name="away_hitter3" />
+	        	<br /><br />
+	        	4번타자 : <input type="text" name="away_hitter4" />
+	        	<br /><br />
+	        	5번타자 : <input type="text" name="away_hitter5" />
+	        	<br /><br />
+	        	6번타자 : <input type="text" name="away_hitter6" />
+	        	<br /><br />
+	        	7번타자 : <input type="text" name="away_hitter7" />
+	        	<br /><br />
+	        	8번타자 : <input type="text" name="away_hitter8" />
+	        	<br /><br />
+	        	9번타자 : <input type="text" name="away_hitter9" />
+	        	<br /><br />
+	        	투수 : <input type="text" name="away_pitcher" />
+	        </div>
+	        <br />
+	        <input type="submit" value="입력" />
+	    </div>
         </form>
           
       <!-- Sticky Footer -->

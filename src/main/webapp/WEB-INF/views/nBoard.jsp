@@ -64,94 +64,96 @@
           <li class="breadcrumb-item active">NBA Board</li>
         </ol>
         <form action="${pageContext.request.contextPath }/nBoard_get.do"" method="get">
-        <div>
-        	Home Team : 
-        	<select name="home_Team">
-        		<option value="HOU">HOU</option>
-        		<option value="POR">POR</option>
-        		<option value="CHA">CHA</option>
-        		<option value="ORL">ORL</option>
-        		<option value="OKC">OKC</option>
-        		<option value="BOS">BOS</option>
-        		<option value="CHI">CHI</option>
-        		<option value="DEN">DEN</option>
-        		<option value="LAL">LAL</option>
-        		<option value="BKN">BKN</option>
-        		<option value="SAC">SAC</option>
-        		<option value="PHX">PHX</option>
-        		<option value="DAL">DAL</option>
-        		<option value="CLE">CLE</option>
-        		<option value="ATL">ATL</option>
-        		<option value="IND">IND</option>
-        		<option value="PHI">PHI</option>
-        		<option value="DET">DET</option>
-        		<option value="TOR">TOR</option>
-        		<option value="MIA">MIA</option>
-        		<option value="GS">GS</option>
-        		<option value="MIL">MIL</option>
-        		<option value="MIN">MIN</option>
-        		<option value="SA">SA</option>
-        		<option value="MEN">MEN</option>
-        		<option value="UTAH">UTAH</option>
-        		<option value="NO">NO</option>
-        		<option value="LAC">LAC</option>
-        		<option value="WSH">WSH</option>
-        		<option value="NYK">NYK</option>
-        	</select>
-        </div>
-        <div style="margin-top:20px;"> 
-        	home_WS : <input type="text" name="home_WS" />
-        	<br /><br />
-        	home_VORP : <input type="text" name="home_VORP" />
-        	<br /><br />
-        	home_BPM : <input type="text" name="home_BPM" />
-        </div>
-        <br /><br /><br /><br /><br /><br /><br />
-        
-        <div>
-        	Away Team : 
-        	<select name="away_Team">  
-        		<option value="HOU">HOU</option>
-        		<option value="POR">POR</option>
-        		<option value="CHA">CHA</option>
-        		<option value="ORL">ORL</option>
-        		<option value="OKC">OKC</option>
-        		<option value="BOS">BOS</option>
-        		<option value="CHI">CHI</option>
-        		<option value="DEN">DEN</option>
-        		<option value="LAL">LAL</option>
-        		<option value="BKN">BKN</option>
-        		<option value="SAC">SAC</option>
-        		<option value="PHX">PHX</option>
-        		<option value="DAL">DAL</option>
-        		<option value="CLE">CLE</option>
-        		<option value="ATL">ATL</option>
-        		<option value="IND">IND</option>
-        		<option value="PHI">PHI</option>
-        		<option value="DET">DET</option>
-        		<option value="TOR">TOR</option>
-        		<option value="MIA">MIA</option>
-        		<option value="GS">GS</option>
-        		<option value="MIL">MIL</option>
-        		<option value="MIN">MIN</option>
-        		<option value="SA">SA</option>
-        		<option value="MEN">MEN</option>
-        		<option value="UTAH">UTAH</option>
-        		<option value="NO">NO</option>
-        		<option value="LAC">LAC</option>
-        		<option value="WSH">WSH</option>
-        		<option value="NYK">NYK</option>
-        	</select>
-        </div>
-        <div style="margin-top:20px;"> 
-        	away_WS : <input type="text" name="away_WS" />
-        	<br /><br />
-        	away_VORP : <input type="text" name="away_VORP" />
-        	<br /><br />
-        	away_BPM : <input type="text" name="away_BPM" />
-        </div>
-        <br />
-        <input type="submit" value="입력" />
+        <div class="row">
+	        <div class="col-xl-3 col-sm-6 mb-3">
+	        	Home Team : 
+	        	<select name="home_Team">
+	        		<option value="HOU">HOU</option>
+	        		<option value="POR">POR</option>
+	        		<option value="CHA">CHA</option>
+	        		<option value="ORL">ORL</option>
+	        		<option value="OKC">OKC</option>
+	        		<option value="BOS">BOS</option>
+	        		<option value="CHI">CHI</option>
+	        		<option value="DEN">DEN</option>
+	        		<option value="LAL">LAL</option>
+	        		<option value="BKN">BKN</option>
+	        		<option value="SAC">SAC</option>
+	        		<option value="PHX">PHX</option>
+	        		<option value="DAL">DAL</option>
+	        		<option value="CLE">CLE</option>
+	        		<option value="ATL">ATL</option>
+	        		<option value="IND">IND</option>
+	        		<option value="PHI">PHI</option>
+	        		<option value="DET">DET</option>
+	        		<option value="TOR">TOR</option>
+	        		<option value="MIA">MIA</option>
+	        		<option value="GS">GS</option>
+	        		<option value="MIL">MIL</option>
+	        		<option value="MIN">MIN</option>  
+	        		<option value="SA">SA</option>
+	        		<option value="MEN">MEN</option>
+	        		<option value="UTAH">UTAH</option>
+	        		<option value="NO">NO</option>
+	        		<option value="LAC">LAC</option>
+	        		<option value="WSH">WSH</option>
+	        		<option value="NYK">NYK</option>
+	        	</select>
+	        </div>
+			<div class="col-xl-3 col-sm-6 mb-3">
+	        	home_WS : <input type="text" name="home_WS" />
+	        	<br /><br />
+	        	home_VORP : <input type="text" name="home_VORP" />
+	        	<br /><br />
+	        	home_BPM : <input type="text" name="home_BPM" />
+			</div>
+	        <br /><br /><br /><br /><br /><br /><br />
+	        
+	        <div class="col-xl-3 col-sm-6 mb-3">
+	        	Away Team : 
+	        	<select name="away_Team">  
+	        		<option value="HOU">HOU</option>	
+	        		<option value="POR">POR</option>
+	        		<option value="CHA">CHA</option>
+	        		<option value="ORL">ORL</option>
+	        		<option value="OKC">OKC</option>
+	        		<option value="BOS">BOS</option>
+	        		<option value="CHI">CHI</option>
+	        		<option value="DEN">DEN</option>
+	        		<option value="LAL">LAL</option>
+	        		<option value="BKN">BKN</option>
+	        		<option value="SAC">SAC</option>
+	        		<option value="PHX">PHX</option>
+	        		<option value="DAL">DAL</option>
+	        		<option value="CLE">CLE</option>
+	        		<option value="ATL">ATL</option>
+	        		<option value="IND">IND</option>
+	        		<option value="PHI">PHI</option>
+	        		<option value="DET">DET</option>
+	        		<option value="TOR">TOR</option>
+	        		<option value="MIA">MIA</option>
+	        		<option value="GS">GS</option>
+	        		<option value="MIL">MIL</option>
+	        		<option value="MIN">MIN</option>
+	        		<option value="SA">SA</option>
+	        		<option value="MEN">MEN</option>
+	        		<option value="UTAH">UTAH</option>
+	        		<option value="NO">NO</option>
+	        		<option value="LAC">LAC</option>
+	        		<option value="WSH">WSH</option>
+	        		<option value="NYK">NYK</option>
+	        	</select>
+			</div>
+			<div class="col-xl-3 col-sm-6 mb-3">	
+	        	away_WS : <input type="text" name="away_WS" />
+	        	<br /><br />
+	        	away_VORP : <input type="text" name="away_VORP" />
+	        	<br /><br />
+	        	away_BPM : <input type="text" name="away_BPM" />
+	        </div>
+	        <br />
+	        <input type="submit" value="입력" />
+	    </div>
         </form>
           
       <!-- Sticky Footer -->

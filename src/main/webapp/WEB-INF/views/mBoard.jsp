@@ -66,107 +66,109 @@
           <li class="breadcrumb-item active">투수 : WAR, ERA, WHIP 입력 </li>
         </ol>
         <form action="${pageContext.request.contextPath }/mBoard_get.do"" method="get">
-        <div>
-        	Home Team : 
-        	<select name="home_Team">
-        		<option value="HOU">MIA</option>
-        		<option value="STL">STL</option>
-        		<option value="PIT">PIT</option>
-        		<option value="BAL">BAL</option>
-        		<option value="DET">DET</option>
-        		<option value="BOS">BOS</option>
-        		<option value="NYY">NYY</option>
-        		<option value="LAA">LAA</option>
-        		<option value="TEX">TEX</option>
-        		<option value="MIL">MIL</option>
-        		<option value="CHC">CHC</option>
-        		<option value="ARI">ARI</option>
-        		<option value="CHW">CHW</option>
-        		<option value="CLE">CLE</option>
-        		<option value="ATL">ATL</option>
-        		<option value="IND">IND</option>
-        		<option value="PHI">PHI</option>
-        		<option value="SEA">SEA</option>
-        		<option value="TOR">TOR</option>
-        		<option value="MIA">MIA</option>
-        		<option value="COL">COL</option>
-        		<option value="SF">SF</option>
-        		<option value="MIN">MIN</option>
-        		<option value="KC">KC</option>
-        		<option value="LAD">LAD</option>
-        		<option value="CIN">CIN</option>
-        		<option value="OAK">OAK</option>
-        		<option value="SD">SD</option>
-        		<option value="WSH">WSH</option>
-        		<option value="NYM">NYM</option>
-        	</select>
-        </div>
-        <div style="margin-top:20px;"> 
-        	home_OBP : <input type="text" name="home_OBP" />
-        	<br /><br />
-        	home_SLG : <input type="text" name="home_SLG" />
-        	<br /><br />
-        	home_WAR_b : <input type="text" name="home_WAR_b" />
-        	<br /><br />
-        	home_ERA : <input type="text" name="home_ERA" />
-        	<br /><br />
-        	home_WHIP : <input type="text" name="home_WHIP" />
-        	<br /><br />
-        	home_WAR_p : <input type="text" name="home_WAR_p" />
-        	<br /><br />
-        </div>
-        <br /><br /><br /><br /><br /><br /><br />
-        
-        <div>
-        	Away Team : 
-        	<select name="away_Team">  
-        		<option value="HOU">MIA</option>
-        		<option value="STL">STL</option>
-        		<option value="PIT">PIT</option>
-        		<option value="BAL">BAL</option>
-        		<option value="DET">DET</option>
-        		<option value="BOS">BOS</option>
-        		<option value="NYY">NYY</option>
-        		<option value="LAA">LAA</option>
-        		<option value="TEX">TEX</option>
-        		<option value="MIL">MIL</option>
-        		<option value="CHC">CHC</option>
-        		<option value="ARI">ARI</option>
-        		<option value="CHW">CHW</option>
-        		<option value="CLE">CLE</option>
-        		<option value="ATL">ATL</option>
-        		<option value="IND">IND</option>
-        		<option value="PHI">PHI</option>
-        		<option value="SEA">SEA</option>
-        		<option value="TOR">TOR</option>
-        		<option value="MIA">MIA</option>
-        		<option value="COL">COL</option>
-        		<option value="SF">SF</option>
-        		<option value="MIN">MIN</option>
-        		<option value="KC">KC</option>
-        		<option value="LAD">LAD</option>
-        		<option value="CIN">CIN</option>
-        		<option value="OAK">OAK</option>
-        		<option value="SD">SD</option>
-        		<option value="WSH">WSH</option>
-        		<option value="NYM">NYM</option>
-        	</select>
-        </div>
-        <div style="margin-top:20px;"> 
-        	away_OBP : <input type="text" name="away_OBP" />
-        	<br /><br />
-        	away_SLG : <input type="text" name="away_SLG" />
-        	<br /><br />
-        	away_WAR_b : <input type="text" name="away_WAR_b" />
-        	<br /><br />
-        	away_ERA : <input type="text" name="away_ERA" />
-        	<br /><br />
-        	away_WHIP : <input type="text" name="away_WHIP" />
-        	<br /><br />
-        	away_WAR_p : <input type="text" name="away_WAR_p" />
-        </div>
-        <br />
-        <input type="submit" value="입력" />
+        <div class="row">
+	        <div class="col-xl-3 col-sm-6 mb-3">
+	        	Home Team : 
+	        	<select name="home_Team">
+	        		<option value="HOU">MIA</option>
+	        		<option value="STL">STL</option>
+	        		<option value="PIT">PIT</option>
+	        		<option value="BAL">BAL</option>
+	        		<option value="DET">DET</option>
+	        		<option value="BOS">BOS</option>
+	        		<option value="NYY">NYY</option>
+	        		<option value="LAA">LAA</option>
+	        		<option value="TEX">TEX</option>
+	        		<option value="MIL">MIL</option>
+	        		<option value="CHC">CHC</option>
+	        		<option value="ARI">ARI</option>
+	        		<option value="CHW">CHW</option>
+	        		<option value="CLE">CLE</option>
+	        		<option value="ATL">ATL</option>
+	        		<option value="IND">IND</option>
+	        		<option value="PHI">PHI</option>
+	        		<option value="SEA">SEA</option>
+	        		<option value="TOR">TOR</option>
+	        		<option value="MIA">MIA</option>
+	        		<option value="COL">COL</option>
+	        		<option value="SF">SF</option>
+	        		<option value="MIN">MIN</option>
+	        		<option value="KC">KC</option>
+	        		<option value="LAD">LAD</option>
+	        		<option value="CIN">CIN</option>
+	        		<option value="OAK">OAK</option>
+	        		<option value="SD">SD</option>
+	        		<option value="WSH">WSH</option>
+	        		<option value="NYM">NYM</option>
+	        	</select>
+	        </div>
+	        <div class="col-xl-3 col-sm-6 mb-3"> 
+	        	home_OBP : <input type="text" name="home_OBP" />
+	        	<br /><br />
+	        	home_SLG : <input type="text" name="home_SLG" />
+	        	<br /><br />
+	        	home_WAR_b : <input type="text" name="home_WAR_b" />
+	        	<br /><br />
+	        	home_ERA : <input type="text" name="home_ERA" />
+	        	<br /><br />
+	        	home_WHIP : <input type="text" name="home_WHIP" />
+	        	<br /><br />
+	        	home_WAR_p : <input type="text" name="home_WAR_p" />
+	        	<br /><br />
+	        </div>
+	        <br /><br /><br /><br /><br /><br /><br />
+	        
+	        <div class="col-xl-3 col-sm-6 mb-3">
+	        	Away Team : 
+	        	<select name="away_Team">  
+	        		<option value="HOU">MIA</option>
+	        		<option value="STL">STL</option>
+	        		<option value="PIT">PIT</option>
+	        		<option value="BAL">BAL</option>
+	        		<option value="DET">DET</option>
+	        		<option value="BOS">BOS</option>
+	        		<option value="NYY">NYY</option>
+	        		<option value="LAA">LAA</option>
+	        		<option value="TEX">TEX</option>
+	        		<option value="MIL">MIL</option>
+	        		<option value="CHC">CHC</option>
+	        		<option value="ARI">ARI</option>
+	        		<option value="CHW">CHW</option>
+	        		<option value="CLE">CLE</option>
+	        		<option value="ATL">ATL</option>
+	        		<option value="IND">IND</option>
+	        		<option value="PHI">PHI</option>
+	        		<option value="SEA">SEA</option>
+	        		<option value="TOR">TOR</option>
+	        		<option value="MIA">MIA</option>
+	        		<option value="COL">COL</option>
+	        		<option value="SF">SF</option>
+	        		<option value="MIN">MIN</option>
+	        		<option value="KC">KC</option>
+	        		<option value="LAD">LAD</option>
+	        		<option value="CIN">CIN</option>
+	        		<option value="OAK">OAK</option>
+	        		<option value="SD">SD</option>
+	        		<option value="WSH">WSH</option>
+	        		<option value="NYM">NYM</option>
+	        	</select>
+	        </div>
+	        <div class="col-xl-3 col-sm-6 mb-3"> 
+	        	away_OBP : <input type="text" name="away_OBP" />
+	        	<br /><br />
+	        	away_SLG : <input type="text" name="away_SLG" />
+	        	<br /><br />
+	        	away_WAR_b : <input type="text" name="away_WAR_b" />
+	        	<br /><br />
+	        	away_ERA : <input type="text" name="away_ERA" />
+	        	<br /><br />
+	        	away_WHIP : <input type="text" name="away_WHIP" />
+	        	<br /><br />
+	        	away_WAR_p : <input type="text" name="away_WAR_p" />
+	        </div>
+	        <br />
+	        <input type="submit" value="입력" />
+	    </div>
         </form>
           
       <!-- Sticky Footer -->
