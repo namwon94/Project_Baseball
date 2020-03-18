@@ -4,25 +4,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>타이틀</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+<title>NBA 승률 예측</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="res/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="res/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="res/css/sb-admin.css" rel="stylesheet">
+
 </head>
-<body>
-	<h3>GET방식으로 전송된 검색 파라미터</h3>
+<body id="page-top">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+    <a class="navbar-brand mr-1" href="${pageContext.request.contextPath }">Sports - 무재칠시</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="${pageContext.request.contextPath }" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Board</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+      	  <h6 class="dropdown-header">Board:</h6>
+          <a class="dropdown-item" href="${pageContext.request.contextPath }/nBoard.do">NBA승률예측</a>
+          <a class="dropdown-item" href="">KBO승률예측</a>
+          <a class="dropdown-item" href="">MLB승률예측</a>
+          <a class="dropdown-item" href="">경기일정</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+    </ul>
+    
+       
+    <div id="content-wrapper">     
+
+     <div class="container-fluid">
+     
+     	<!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">NBA Board</li>
+        </ol>
+		<div class="row">
+	         <div class="col-xl-3 col-sm-6 mb-3">
+	           <div class="card text-white bg-primary o-hidden h-100">
+	             <div class="card-body">
+	               <div class="card-body-icon">
+	                 <i class="fas fa-fw fa-comments"></i>
+	               </div>
+	               <div class="mr-5">${win_Team }팀 승리</div>
+	             </div>		
+				</div>
+			</div>
+		</div>
+
 	
-	<ul>
+ 
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>무재칠시 2020</span>
+          </div>
+        </div>
+      </footer>
 
-		<li>home_WS : ${home_WS }</li>
-		<li>home_VORP : ${home_VORP }</li>
-		<li>home_BPM : ${home_BPM }</li>
-		
+     </div>
+    <!-- /.content-wrapper -->
 
-		<li>away_WS : ${away_WS }</li>
-		<li>away_VORP : ${away_VORP }</li>
-		<li>away_BPM : ${away_BPM }</li>
-		
-		<li>result : ${result }</li>
-		
-	</ul>
+  </div>  
+  
 </body>
 </html>
+  
