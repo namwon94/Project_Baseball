@@ -26,7 +26,7 @@ function loginValidate(f)
 		return false;
 	} 
 }
-</script>   
+</script>      
 <div class="container"> 
 	<h3>방명록(로그인)</h3> 
 	<c:choose>
@@ -38,10 +38,11 @@ function loginValidate(f)
 				<button class="btn btn-danger" onclick="location.href='logout.do';">
 					로그아웃</button>
 				&nbsp;&nbsp;
-				<button class="btn btn-primary" onclick="location.href='index.jsp';">
+				<button class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }';">
 					방명록리스트</button>
 			</div>
 		</c:when>
+		
 		<c:otherwise>
 			<span style="font-size:1.5em; color:red;">${LoginNG }</span>
 			<form name="loginForm" method="post" action="./loginAction.do" onsubmit="return loginValidate(this);">
@@ -59,6 +60,8 @@ function loginValidate(f)
 					</tr>
 				</table>
 			</form>
+			<br /><br /><br />
+			<td rowspan="2" style="width:80px;"><button type="submit" class="btn btn-primary" style="height:200px; width:200px;"  tabindex="3" onclick="location.href='${pageContext.request.contextPath }';">무재칠시(홈)</button></td>
 		</c:otherwise>
 	</c:choose>
 </div>

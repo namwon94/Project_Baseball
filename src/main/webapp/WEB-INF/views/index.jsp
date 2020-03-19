@@ -98,8 +98,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="${pageContext.request.contextPath }/mybatis/login.do">Login</a>
-          <a class="dropdown-item" href="register.html">회원가입</a>
+  			<a class="dropdown-item" href="${pageContext.request.contextPath }/mybatis/login.do">Login</a>
+       		<a class="dropdown-item" href="register.html">회원가입</a>
           <div class="dropdown-divider"></div>
         </div>
       </li>
@@ -203,8 +203,10 @@
                 </span>
               </a>
             </div>
-          </div>
-        </div>
+          </div>  
+        </div>  
+        <br /><br /><br /><br /><br /><br />
+        <div><img src="./res/코비 RIP.jpg" alt="RIP" width="350px" height="200px"/></div>
 
         <!-- Area Chart Example-->
 <!--         <div class="card mb-3">

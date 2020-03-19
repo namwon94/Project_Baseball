@@ -8,7 +8,7 @@
 		매개변수를 받는 두번째 방법으로 #{0}. #{1}과 같이 인덱스로 받을 수 있다.
 	 -->
 	<select id="login" resultType="mybatis.MemberVO" parameterType="String">
-		select * from member where id=#{id} and pass=#{pass}
+		select * from member where id=#{param1} and pass=#{param2}
 	</select>
 	
 	

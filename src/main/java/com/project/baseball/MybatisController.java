@@ -64,6 +64,14 @@ public class MybatisController {
 		
 	}
 	
+	//로그아웃 페이지
+	@RequestMapping("/mybatis/logout.do")
+	public String login(HttpSession session) {
+		//세션영역을 비운후 로그인 페이지로 이동한다.
+		session.setAttribute("siteUserInfo", null);
+		return "login";
+	}
+	
 	
 	
 	

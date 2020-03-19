@@ -67,6 +67,12 @@
 				</div>
 			</div>
 		</div>
+		
+		<div>
+			<img src="./res/KBO.jpg" alt="KBO" width="300px", heigtht="300px" />
+			<br /><br /><br />
+			<img src="./res/KBOTEAM.jpg" alt="KBOTEAM" />
+		</div>
 
 	
  
