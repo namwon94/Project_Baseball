@@ -17,6 +17,8 @@ https://github.com/Woosub-Kim/sports_predict_api
 <h3>웹 페이지 구현<h3/>
 spring이용(Ecilpse 사용) -> @Controller, @ModelAndView, @RequestMapping 사용(웹페이지 구현) -> get방식으로 데이터를 보낸 후 ->
 JSON Type받고 String으로 형변환후웹페이지 전송
+  
+ 
 <h4>고충사항<h4/>
 파라미터를 주고 받는 부분이 까다로웠다.
 <br/>
