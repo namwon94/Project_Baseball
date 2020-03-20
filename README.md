@@ -1,6 +1,6 @@
-# 팀 무재칠시
+# 팀 무재칠시 with 김우섭
 
-<h3>팀원 : 김우섭<h3/>
+<h3><h3/>
 https://github.com/Woosub-Kim/project_NBA_predict
 <br/>
 https://github.com/Woosub-Kim/Project_KBO_Predict
