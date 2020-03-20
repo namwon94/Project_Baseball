@@ -20,7 +20,7 @@ JSON Type받고 String으로 형변환후웹페이지 전송
 <br/><br/><br/>
  
 <h4>고충사항<h4/>
-파라미터를 주고 받는 부분이 까다로웠다.
+파라미터를 주고 받는 부분이 까다로웠다. 오류를 발견하고 해결하는 과정이 많이 힘들었다.
 <br/><br/><br/>
  
 <img width="" height="" src='https://github.com/namwon94/Project_Baseball/blob/master/webpage.png'></img>
