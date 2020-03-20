@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import mybatis.MemberVO;
@@ -72,6 +73,18 @@ public class MybatisController {
 		return "login";
 	}
 	
+	//회원가입
+	/*
+	 * @RequestMapping(value="/mybatis/register.do", method=RequestMethod.GET)
+	 * public String registerGET(Model model) throws Exception {
+	 * 
+	 * model.addAttribute("MemberVO", new MemberVO());
+	 * 
+	 * return "register";
+	 * 
+	 * 
+	 * }
+	 */
 	
 	
 	

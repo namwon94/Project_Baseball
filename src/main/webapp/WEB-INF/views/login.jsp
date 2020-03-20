@@ -28,7 +28,7 @@ function loginValidate(f)
 }
 </script>      
 <div class="container"> 
-	<h3>방명록(로그인)</h3> 
+	<h3>무재칠시(로그인)</h3> 
 	<c:choose>
 		<c:when test="${not empty sessionScope.siteUserInfo }">
 			<div class="row" style="border:2px solid #cccccc;padding:10px;">			

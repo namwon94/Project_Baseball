@@ -99,7 +99,7 @@
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Login Screens:</h6>
   			<a class="dropdown-item" href="${pageContext.request.contextPath }/mybatis/login.do">Login</a>
-       		<a class="dropdown-item" href="register.html">회원가입</a>
+       		<!-- <a class="dropdown-item" href="register.html">회원가입</a> -->
           <div class="dropdown-divider"></div>
         </div>
       </li>
@@ -188,7 +188,7 @@
               </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <!-- <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-danger o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -203,7 +203,7 @@
                 </span>
               </a>
             </div>
-          </div>  
+          </div>   -->
         </div>  
         <br /><br /><br /><br /><br /><br />
         <div><img src="./res/RIP.jpg" alt="RIP" width="350px" height="200px"/></div>
