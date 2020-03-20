@@ -206,7 +206,7 @@
           </div>  
         </div>  
         <br /><br /><br /><br /><br /><br />
-        <div><img src="./res/코비 RIP.jpg" alt="RIP" width="350px" height="200px"/></div>
+        <div><img src="./res/RIP.jpg" alt="RIP" width="350px" height="200px"/></div>
 
         <!-- Area Chart Example-->
 <!--         <div class="card mb-3">

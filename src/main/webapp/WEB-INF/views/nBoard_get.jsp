@@ -78,7 +78,7 @@
 		<div style="margin-top:150px">
 			<img src="./res/NBAlogo.png" alt="NBAlogo" width="300px", height="300px" />
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="./res/코비.jpg" alt="jpg" />
+			<img src="./res/kobe.jpg" alt="jpg" />
 		</div>
 
 	
