@@ -90,6 +90,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
+    <!--  게시판     -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
