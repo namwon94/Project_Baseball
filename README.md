@@ -15,6 +15,7 @@ https://github.com/Woosub-Kim/sports_predict_api
 <br/><br/><br/>
 
 <h1>웹 페이지 구현<h1/>
+ <br/>
 JAVA(Ecilpse 이용) - Spring 기반으로 웹페이지 만들기(@Controller, @RequestMapping 사용)
 (머신러닝을 한 승률데이터를 api로 만든다) -> 주소를 받아 get방식으로 만든다(@RequestMapping, ModelAndView 사용
 get 방식으로 파라미터를 보내 후 -> 데이터 받는다(JSON Type) -> String 형변환 -> 웹페이지 전송
