@@ -14,7 +14,7 @@ https://github.com/Woosub-Kim/sports_predict_api
 (승률예측은 위의 주소로 들어가서 api를 써야함) 
 <br/><br/><br/>
 
-<h1>웹 페이지 구현<h1/>
+<h3>웹 페이지 구현<h3/>
  <br/>
 JAVA(Ecilpse 이용) - Spring 기반으로 웹페이지 만들기(@Controller, @RequestMapping 사용)
  <br/>
