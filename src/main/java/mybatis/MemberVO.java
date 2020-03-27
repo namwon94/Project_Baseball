@@ -1,7 +1,7 @@
 package mybatis;
 
 import java.sql.Date;
-
+// 로그인의 필요한 멤버 변수
 public class MemberVO {
 	private String id;
 	private String pass;
