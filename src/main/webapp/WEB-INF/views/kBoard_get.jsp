@@ -23,7 +23,7 @@
 
 </head>
 <body id="page-top">
-
+<!--  받은 파라미터 표시(HOME&AWAY )  -->
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
     <a class="navbar-brand mr-1" href="${pageContext.request.contextPath }">Sports - 무재칠시</a>
@@ -46,7 +46,7 @@
       </li>
     </ul>
     
-       
+   
     <div id="content-wrapper">     
 
      <div class="container-fluid">
