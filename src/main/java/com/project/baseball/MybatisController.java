@@ -19,7 +19,7 @@ public class MybatisController {
 
 	
 	private SqlSession sqlSession;
-	
+// MySQL 연결 성공 유
 	@Autowired
 	public void setSqlSession(SqlSession sqlSession) {
 		this.sqlSession = sqlSession;
