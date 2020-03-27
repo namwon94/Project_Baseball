@@ -34,19 +34,19 @@ public class HomeController {
 	
 	
 	
-	
+// NBA게시판으로 이동
 	@RequestMapping("/nBoard")
 	public String nBoard(Model model) {
 		return "nBoard";
 	}
-	
+// NBA게시판에서 데이터 값 전송
 	@RequestMapping(value="/nBoard_get", method=RequestMethod.GET)
 	@ResponseBody
 	public ModelAndView sendGetNBA(HttpServletRequest req) {
 		System.out.println("RequestMethod.GET방식으로 폼값전송");
 		
 		ModelAndView mv = new ModelAndView();
-
+// 데이터 입력
 		float home_WS  = Float.parseFloat(req.getParameter("home_WS"));
 		float home_VORP = Float.parseFloat(req.getParameter("home_VORP"));
 		float home_BPM = Float.parseFloat(req.getParameter("home_BPM"));
@@ -54,7 +54,7 @@ public class HomeController {
 		float away_WS = Float.parseFloat(req.getParameter("away_WS"));
 		float away_VORP = Float.parseFloat(req.getParameter("away_VORP"));
 		float away_BPM = Float.parseFloat(req.getParameter("away_BPM"));
-
+// 파라미터 전송(API 이용)
 		try {
 			String urlstr = "https://sports-predict-api-ppkcy.run.goorm.io//" 
 					 + "NBA?home_BPM="+home_BPM
@@ -63,6 +63,7 @@ public class HomeController {
 					 + "&away_VORP="+away_VORP 
 					 +"&home_WS="+home_WS
 					 + "&away_WS="+away_WS;
+// 전송방식(GET-JSON Type)
 			URL url = new URL(urlstr);
 			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
 			urlconnnection.setRequestMethod("GET");
@@ -74,11 +75,13 @@ public class HomeController {
 			String responseLine = null;
 			String res = "";
 
+// 얻은 파라미터 저장
 			while((responseLine=br.readLine()) != null) {
 				response.append(responseLine.trim());
 				res = response.toString();
 				System.out.println(br.readLine());
 			}
+// 파라미터 형변환(JSON -> String)후 전송
 			String win_Team = res;
 			
 			if(win_Team.contains("home")) {
@@ -96,12 +99,12 @@ public class HomeController {
 		return mv;
 
 	}
-	
+// KBO게시판으로 이동
 	@RequestMapping("/kBoard")
 	public String kBoard(Model model) {
 		return "kBoard";
 	}
-
+// KBO게시판에서 데이터 전송
 	@RequestMapping(value="/kBoard_get", method=RequestMethod.GET)
 	@ResponseBody
 	public ModelAndView sendGetkBoard(HttpServletRequest req) {
@@ -134,7 +137,7 @@ public class HomeController {
 		float aBatter9 = Float.parseFloat(req.getParameter("away_hitter9"));
 		float aPitcher = Float.parseFloat(req.getParameter("away_pitcher"));
 
-
+// 파라미터전송(API이용)
 		try {
 			String urlstr = 
 					"https://sports-predict-api-ppkcy.run.goorm.io/KBO?"
@@ -158,6 +161,7 @@ public class HomeController {
 					+ "&away_hitter7="+aBatter7
 					+ "&away_hitter8="+aBatter8
 					+ "&away_hitter9="+aBatter9;
+// 전송방식(GET-JSON Type)
 			URL url = new URL(urlstr);
 			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
 			urlconnnection.setRequestMethod("GET");
@@ -169,11 +173,13 @@ public class HomeController {
 			String responseLine = null;
 			String res = "";
 			
+// 얻은 파리미터 저장
 			while((responseLine=br.readLine()) != null) {
 				response.append(responseLine.trim());
 				res = response.toString();
 				System.out.println(br.readLine());
 			}
+// 파라미터 형변환(JSON -> String)후 전송
 			String win_Team = res;
 			
 			if(win_Team.contains("home")) {
@@ -191,13 +197,13 @@ public class HomeController {
 
 	}
 	
-	
+// MLB게시판으로 이동
 	@RequestMapping("/mBoard")
 	public String mBoard(Model model) {
 		return "mBoard";
 	}
 	
-	
+// MLB게시판에서 데이터 전송
 	@RequestMapping(value="/mBoard_get", method=RequestMethod.GET)
 	@ResponseBody
 	public ModelAndView sendGetMLB(HttpServletRequest req) {
@@ -220,7 +226,7 @@ public class HomeController {
 		float away_ERA = Float.parseFloat(req.getParameter("away_ERA"));
 		float away_WHIP = Float.parseFloat(req.getParameter("away_WHIP"));
 		float away_WAR_p = Float.parseFloat(req.getParameter("away_WAR_p"));
-
+// 파라미터 전송(API 이용)
 		try {
 			String urlstr = 
 					"https://sports-predict-api-ppkcy.run.goorm.io/MLB?"
@@ -236,6 +242,7 @@ public class HomeController {
 					+ "&away_WHIP="+away_WHIP
 					+ "&away_ERA="+away_ERA
 					+ "&away_WAR_p="+away_WAR_p;
+// 전송방식(GET-JSON Type)
 			URL url = new URL(urlstr);
 			HttpsURLConnection urlconnnection = (HttpsURLConnection)url.openConnection();
 			urlconnnection.setRequestMethod("GET");
@@ -246,12 +253,14 @@ public class HomeController {
 			StringBuilder response = new StringBuilder();
 			String responseLine = null;
 			String res = "";
-			
+
+// 얻은 파라미터 저장
 			while((responseLine=br.readLine()) != null) {
 				response.append(responseLine.trim());
 				res = response.toString();
 				System.out.println(br.readLine());
 			}
+// 파라미터 형변환(JSON -> String)후 
 			String win_Team = res;
 			
 			if(win_Team.contains("home")) {
