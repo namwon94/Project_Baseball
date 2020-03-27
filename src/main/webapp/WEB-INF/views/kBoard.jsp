@@ -58,7 +58,7 @@
     <div id="content-wrapper">     
 
      <div class="container-fluid">
-     
+<!--    데이터(WAR) 입력    -->
      	<!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item active">KBO Board - WAR를 입력해주세요</li>
