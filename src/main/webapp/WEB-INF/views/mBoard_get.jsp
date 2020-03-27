@@ -23,6 +23,7 @@
 
 </head>
 <body id="page-top">
+<!--  받은 파라미터 표시(HOME&AWAY 표시)  -->
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
