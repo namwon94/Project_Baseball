@@ -1,7 +1,7 @@
 package mybatis;
 
 public interface MybatisMember {
-	
+// 로그인의 필요한 
 	public MemberVO login(String id, String pass);
 	
 	/*
