@@ -3,7 +3,7 @@ package com.project.baseball;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-
+// MySQL 연결 성공 
 public class Test_Con {
 	
 	public static void main(String[] args) {
