@@ -28,6 +28,7 @@ function loginValidate(f)
 }
 </script>      
 <div class="container"> 
+<!--   로그인 	 -->
 	<h3>무재칠시(로그인)</h3> 
 	<c:choose>
 		<c:when test="${not empty sessionScope.siteUserInfo }">
